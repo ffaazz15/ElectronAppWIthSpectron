@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>Hello!</h1>
+  <h3>Welcome to your Electron application.</h3>
+  <div id="olddiv"><label for="lname">Enter your name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <button id="sbm" onclick="myFunction()">Submit</button><br><br></div>
+  <div id="newdiv" style="display:none">
+    <h2 for="display">Welcome,</h2>
+    <h4 id="display"></h4><br><br>
+  </div>
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("olddiv");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    var y = document.getElementById("newdiv");
+    if (y.style.display === "block") {
+      y.style.display = "none";
+    } else {
+      y.style.display = "block";
+    }
+    document.getElementById("display").innerHTML = document.getElementById("lname").value;
+  }
+</script>
+
+</html>

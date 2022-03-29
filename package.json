@@ -1,0 +1,19 @@
+{
+  "name": "simpleapp2",
+  "version": "1.0.0",
+  "description": "second app for test purpose",
+  "main": "index.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "mocha --timeout 10000"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^17.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.1",
+    "spectron": "^19.0.0"
+  }
+}
